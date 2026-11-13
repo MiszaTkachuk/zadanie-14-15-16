@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>formularz Tkachuk    </title> 
+</head> 
+<body> 
+<h1>Poniżej jest formularz</h1><br>
+  <body bgcolor="#008000"> 
+<title>Zapisy na zajęcia pozalekcyjne</title>
+</head>
+<body>
+ 
+<left><h1>Zapisy na zajęcia pozalekcyjne</h1></left>
+ 
+<form action="mailto:twoj@email.pl" method="post" enctype="text/plain">
+ 
+<table>
+  <tr>
+    <td><b>Imię</b> <input name="imie" size="25"></td>
+    <td><b>Nazwisko</b> <input name="nazwisko" size="25"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Adres Zamieszkania</b> <input name="adres" size="50"></td>
+  </tr>
+</table>
+ 
+<br>
+ 
+<table border="1" width="800">
+  <tr height="200">
+    <td width="400" valign="top">
+      <font size="5">Twoje zainteresowania</font><br><br>
+      <input type="checkbox" name="zainteresowania" value="sport"> Sport<br>
+      <input type="checkbox" name="zainteresowania" value="muzyka"> Muzykę<br>
+      <input type="checkbox" name="zainteresowania" value="inne"> Inne (napisz swoje)<br><br>
+      <input name="inne_zainteresowania" size="30">
+    </td>
+    <td width="400" valign="top">
+      <font size="5">W którym języku chcesz mieć zajęcia</font><br><br>
+      <input type="radio" name="jezyk" value="polski"> Polski<br>
+      <input type="radio" name="jezyk" value="angielski"> Angielski<br>
+      <input type="radio" name="jezyk" value="niemiecki"> Niemiecki<br>
+      <input type="radio" name="jezyk" value="inny"> Inny <input name="inny_jezyk" size="20">
+    </td>
+  </tr>
+ 
+  <tr height="250">
+    <td valign="top">
+      <font size="5">Napisz kilka zdań o sobie</font><br><br>
+      <textarea name="o_sobie" cols="40" rows="8">Napisz tutaj tekst o sobie</textarea>
+    </td>
+    <td valign="top">
+      <font size="5">Z której klasy jesteś?</font><br><br>
+      <select name="klasa">
+        <option value="">Wybierz</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br><br><br>
+      <font size="5">Wybierz zajęcia:</font><br><br>
+      <select name="zajecia" size="3">
+        <option value="Koszykówka">Koszykówka</option>
+        <option value="Szachy">Szachy</option>
+        <option value="Pływanie">Pływanie</option>
+      </select>
+    </td>
+  </tr>
+ 
+  <tr height="200">
+    <td valign="top">
+      <font size="5">Napisz swój PESEL (max 11 znaków)</font><br><br>
+      <input name="pesel" size="15" maxlength="11">
+    </td>
+    <td valign="top">
+      <font size="5">Wybierz dzień:</font><br><br>
+      <select name="dzien" size="3">
+        <option value="Poniedziałek">Poniedziałek</option>
+        <option value="Wtorek">Wtorek</option>
+        <option value="Środa">Środa</option>
+      </select>
+    </td>
+  </tr>
+</table>
+ 
+<br><br>
+ 
+<table>
+  <tr>
+    <td><b>Hasło</b> <input type="password" name="haslo" size="20"></td>
+    <td width="40"></td>
+    <td><input type="submit" value="Wyślij" style="height:50px; width:120px"></td>
+    <td><input type="reset" value="Wyczyść" style="height:50px; width:120px"></td>
+    <td width="40"></td>
+    <td>
+      <table border="1">
+        <tr><td><input type="button" value="Regulamin" style="width:120px"></td></tr>
+        <tr><td><input type="button" value="Pomoc" style="width:120px"></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+ 
+</form>
+
+<A HREF="index.html"><h2>Wróć </h2></A><br>
+
+</body> 
+</html>
